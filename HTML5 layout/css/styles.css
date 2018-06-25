@@ -1,0 +1,86 @@
+img {
+    width: 100%;
+}
+
+.header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #bababa;
+    margin: 50px;
+    font-size: 50px; 
+}
+
+.menu {
+    padding: 0;
+}
+
+.header ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    float: left;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+
+.header ul li {
+    width: 25%;
+    float: left;
+    background: #EFEFEF;
+}
+
+.header ul li a {
+    display: block;
+    text-decoration: none;
+}
+
+.header ul li:hover {
+    background: #BFBFBF;
+}
+
+.header ul li:hover > a {
+    color: #FFF;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+.tittle-post {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.tittle-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.footer .layer a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer .layer p {
+    margin-top: 10px;
+}
+
+.footer .layer {
+    text-align: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    
+}
+
+.footer .layer:nth-child(2) {
+    border-left: 2px solid #EEE;
+    border-right: 2px solid #EEE;
+}
