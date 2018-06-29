@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BT vẽ hình</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="bai1"></p>
+
+        <script>
+            function printTrigangle(n) {
+                var str = '';
+
+                for (i = 0; i < n; i++) {
+                    for (x = 0; x < n; x++) {
+
+                        if (i === x) {
+                            break;
+                        }
+                        str += "* ";
+                    }
+                    str += "* " + "<br/>";
+                }
+                return str;
+            }
+            document.write(printTrigangle(5));
+        </script>
+
+        <p id="bai2"></p>
+
+        <script>
+            function printEmptyRectangle(d, r) {
+                var str = '';
+
+                for (i = 1; i <= d; i++) {
+                    for (j = 1; j <= r; j++) {
+
+                        if (i == 1 || i == d || j == 1 || j == r) {
+                            str += "* ";
+                        } else {
+                            str += "&nbsp &nbsp";
+                        }
+
+                    }
+                    str += "<br/>";
+                }
+
+                return str;
+            }
+            document.write(printEmptyRectangle(5, 5));
+        </script>
+
+        <p id="bai3"></p>
+
+        <script>
+            function printSpecialTrigangle(n) {
+                var str = '';
+                for (i = n; i > 0; i--) {
+                    for (x = i; x < n; x++) {
+                        str += "&nbsp;&nbsp;";
+                    }
+                    for (y = 0; y < 2 * i - 1; y++) {
+                        str += "*";
+                    }
+                    str += "<br/>";
+                }
+                return str;
+            }
+            document.write(printSpecialTrigangle(5));
+        </script>
+
+        <p id="bai4"></p>
+
+        <script>
+            function printX(n) {
+                var str = '';
+                for (var i = 1; i <= n; i++) {
+                    for (var j = 1; j <= n; j++) {
+                        if (j == i || j == (n - i + 1)) {
+                            str += '*';
+                        } else {
+                            str += '&nbsp;&nbsp;';
+                        }
+                    }
+                    str += '<br>';
+                }
+                return str;
+            }
+            document.write(printX(5));
+        </script>
+
+        <p id="bai5"></p>
+
+        <script>
+            function printButterfly(n) {
+                var str = '';
+                for (var i = 1; i <= n; i++) {
+                    for (var j = 1; j <= n; j++) {
+                        if (i <= (n + 1) / 2) {
+                            if (j <= i || j > (n - i)) {
+                                str += '*';
+                            } else {
+                                str += '&nbsp;&nbsp;';
+                            }
+                        } else {
+                            if (j >= i || j <= (n - i + 1)) {
+                                str += '*';
+                            } else {
+                                str += '&nbsp;&nbsp;';
+                            }
+                        }
+                    }
+                    str += '<br>';
+                }
+                return str;
+            }
+            document.write(printButterfly(5));
+        </script>
+    </body>
+</html>
