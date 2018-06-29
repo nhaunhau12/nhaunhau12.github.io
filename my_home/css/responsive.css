@@ -1,0 +1,143 @@
+@media(max-width:1280px) {
+    .education ul li:nth-child(2n+1) .icon {
+        left: -136px;
+    }
+
+    .education ul li:nth-child(2n) .icon {
+        right: -138px;
+    }
+
+    .education ul li:nth-child(2n) .icon::before,
+    .education ul li:nth-child(2n+1) .icon::after {
+        left: 23%;
+        top: 23%;
+    }
+
+    .about-content .about-image img {
+        display: block;
+        width: 60%;
+        margin-bottom: 30px;
+    }
+
+    .about-image img {
+        display: none;
+    }
+
+    .work ul li:nth-child(2n+1) .icon, .education ul li:nth-child(2n+1) .icon {
+        left: -94px;
+    }
+
+    .main::before {
+        content: "";
+        height: 590px;
+        top: 28%;
+    }
+
+    .work ul li:nth-child(2n) .icon, .education ul li:nth-child(2n) .icon {
+        right: -96px;
+    }
+
+    .card {
+        width: 33.3%;
+    }
+
+    .card .icon img {
+        width: 100%;
+        padding: 27px 0;
+    }
+
+    .card .text a {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+    .call {
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 360px){
+    .title-page {
+        text-align: center;
+        width: 100%;
+    }
+
+    .title-page::before {
+        width: 20%;
+        left: 40%;
+    }
+
+    .header .menu .menu-button span {
+        width: 50px;
+        height: 4px;
+    }
+
+    .about-content .about-image img {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .about-content .data-text p {
+        font-size: 16px;
+        padding: 0 30px;
+    }
+
+    .about-content .data-text .info {
+        width: 85%;
+        margin: 0 30px;
+        font-size: 18px;
+    }
+
+    .main::before {
+        border: 0;
+    }
+
+    .work ul li:nth-child(2n+1) .icon, .education ul li:nth-child(2n+1) .icon,
+    .work ul li:nth-child(2n) .icon, .education ul li:nth-child(2n) .icon,
+    .work ul li:nth-child(2n+1)::after, .education ul li:nth-child(2n+1)::after,
+    .work ul li:nth-child(2n)::before, .education ul li:nth-child(2n)::before {
+        display: none;
+    }
+
+    .work ul li, .education ul li {
+        width: 80%;
+    }
+
+    .work ul li:nth-child(2n+1), .education ul li:nth-child(2n+1),
+    .work ul li:nth-child(2n), .education ul li:nth-child(2n) {
+        margin: 10px 35px;
+    }
+
+    .skill .slidecontainer {
+        padding: 0 30px;
+    }
+
+    .mail, .message {
+        width: 100%;
+    }
+
+    .footer .mail input {
+        margin: 10px 10px;
+    }
+
+    .footer .message input {
+        width: 95%;
+        margin: 10px;
+    }
+
+    .footer .message a {
+        margin: 0 8px;
+        width: 95%;
+    }
+
+    .main-footer h3 {
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0 30px;
+    }
+}
